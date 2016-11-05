@@ -1,5 +1,7 @@
-# Commit message template Plugin for Intellij IDEA
-Enables setting a pre determined template to be used as the commit message
+# Commit message template Plugin for Intellij
+- Enables setting a pre determined template to be used as the commit message
+- Supports Intellij 2016 and up.
+- Tested on RubyMine, PHPStorm and IDEA community Edition
 
 ## Installation
 TBD
