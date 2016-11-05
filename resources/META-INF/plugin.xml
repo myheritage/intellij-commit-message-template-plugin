@@ -1,0 +1,35 @@
+<idea-plugin version="1">
+    <id>MHCommitMessageTemplate</id>
+    <name>Commit Message Template</name>
+    <version>1</version>
+    <vendor url="http://www.myheritage.com">MyHeritage</vendor>
+
+    <description><![CDATA[
+    <p>111Adds a button to the commit dialog (right above the commit message field), that loads a commit message template.</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <p>1.0</p>
+    <ul>
+        <li>Initial release</li>
+    </ul>
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="135.1230"/>
+    <depends>com.intellij.modules.vcs</depends>
+
+    <actions>
+        <action id="CommitMessageTemplate.Button" class="commitmessagetemplate.CommitMessageTemplateAction"
+                text="Commit Message Template"
+                description="Load commit message template" icon="/enterTemplate.png">
+            <add-to-group group-id="Vcs.MessageActionGroup" anchor="first"/>
+        </action>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectConfigurable groupId="tools" displayName="Commit Message Template" id="preferences.CommitMessageTemplateConfigurable" instance="commitmessagetemplate.CommitMessageTemplateConfigurable" />
+        <projectService serviceInterface="commitmessagetemplate.CommitMessageTemplateConfig" serviceImplementation="commitmessagetemplate.CommitMessageTemplateConfig"/>
+    </extensions>
+
+</idea-plugin>
