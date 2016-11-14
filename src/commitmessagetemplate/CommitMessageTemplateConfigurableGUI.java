@@ -9,38 +9,34 @@ import javax.swing.*;
  */
 public class CommitMessageTemplateConfigurableGUI {
     private JPanel rootPanel;
-    private JTextArea textArea1;
-    private CommitMessageTemplateConfig mConfig;
+    private JTextArea commitMessageTextBox;
+    private CommitMessageTemplateConfig config;
 
-    CommitMessageTemplateConfigurableGUI() {
-
+    void createUI(Project project) {
+        config = CommitMessageTemplateConfig.getInstance(project);
+        if (config != null) {
+            commitMessageTextBox.setText(config.getCommitMessage());
+        }
     }
 
-    public void createUI(Project project) {
-        mConfig = CommitMessageTemplateConfig.getInstance(project);
-        textArea1.setText(mConfig.getTemplateName());
-    }
-
-    public JPanel getRootPanel() {
+    JPanel getRootPanel() {
         return rootPanel;
     }
 
-    public JTextArea getTemplateName() {
-        return textArea1;
+//    public JTextArea getTemplateName() {
+//        return commitMessageTextBox;
+//    }
+
+    boolean isModified() {
+        return !commitMessageTextBox.getText().equals(config.getCommitMessage());
     }
 
-    public boolean isModified() {
-        boolean modified = false;
-        modified |= !textArea1.getText().equals(mConfig.getTemplateName());
-        return modified;
+    void apply() {
+        config.setCommitMessage(commitMessageTextBox.getText());
     }
 
-    public void apply() {
-        mConfig.setTemplateName(textArea1.getText());
-    }
-
-    public void reset() {
-        textArea1.setText(mConfig.getTemplateName());
+    void reset() {
+        commitMessageTextBox.setText(config.getCommitMessage());
     }
 
 

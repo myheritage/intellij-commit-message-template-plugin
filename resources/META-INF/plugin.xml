@@ -22,7 +22,7 @@
     <actions>
         <action id="CommitMessageTemplate.Button" class="commitmessagetemplate.CommitMessageTemplateAction"
                 text="Commit Message Template"
-                description="Load commit message template" icon="/enterTemplate.png">
+                description="Load commit message template" icon="/commitmessagetemplate/enterTemplate.png">
             <add-to-group group-id="Vcs.MessageActionGroup" anchor="first"/>
         </action>
     </actions>

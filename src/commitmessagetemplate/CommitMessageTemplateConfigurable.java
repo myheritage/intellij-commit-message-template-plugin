@@ -16,16 +16,13 @@ import javax.swing.*;
 
 public class CommitMessageTemplateConfigurable implements SearchableConfigurable {
 
-    private CommitMessageTemplateConfigurableGUI mGUI;
-    private final CommitMessageTemplateConfig mConfig;
+    private CommitMessageTemplateConfigurableGUI gui;
 
-    private final Project mProject;
+    private final Project project;
 
     public CommitMessageTemplateConfigurable(@NotNull Project project) {
-        mProject = project;
-        mConfig = CommitMessageTemplateConfig.getInstance(project);
+        this.project = project;
     }
-
 
     @Nls
     @Override
@@ -36,7 +33,7 @@ public class CommitMessageTemplateConfigurable implements SearchableConfigurable
     @Nullable
     @Override
     public String getHelpTopic() {
-        return "preference.CommitMessageTemplateConfigurable";
+        return null;
     }
 
     @NotNull
@@ -54,29 +51,29 @@ public class CommitMessageTemplateConfigurable implements SearchableConfigurable
     @Nullable
     @Override
     public JComponent createComponent() {
-        mGUI = new CommitMessageTemplateConfigurableGUI();
-        mGUI.createUI(mProject);
-        return mGUI.getRootPanel();
+        gui = new CommitMessageTemplateConfigurableGUI();
+        gui.createUI(project);
+        return gui.getRootPanel();
     }
 
     @Override
     public boolean isModified() {
-        return mGUI.isModified();
+        return gui.isModified();
     }
 
     @Override
     public void apply() throws ConfigurationException {
-        mGUI.apply();
+        gui.apply();
     }
 
     @Override
     public void reset() {
-        mGUI.reset();
+        gui.reset();
     }
 
     @Override
     public void disposeUIResources() {
-        mGUI = null;
+        gui = null;
     }
 
 

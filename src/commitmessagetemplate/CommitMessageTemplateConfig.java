@@ -8,9 +8,7 @@ import com.intellij.openapi.project.Project;
 import com.intellij.util.xmlb.XmlSerializerUtil;
 import org.jetbrains.annotations.Nullable;
 
-/**
- * Created by matan.goren on 24-Sep-16.
- */
+
 @State(
         name = "CommitMessageTemplateConfig",
         storages = {
@@ -18,19 +16,17 @@ import org.jetbrains.annotations.Nullable;
 )
 public class CommitMessageTemplateConfig implements PersistentStateComponent<CommitMessageTemplateConfig> {
 
-    public String templateName = "";
+    private String commitMessage = "";
 
-    CommitMessageTemplateConfig() { }
-
-    public String getTemplateName() {
-        if (templateName == null) {
-            templateName = "";
+    String getCommitMessage() {
+        if (commitMessage == null) {
+            commitMessage = "";
         }
-        return templateName;
+        return commitMessage;
     }
 
-    void setTemplateName(String templateName) {
-        this.templateName = templateName;
+    void setCommitMessage(String commitMessage) {
+        this.commitMessage = commitMessage;
     }
 
     @Nullable
@@ -45,8 +41,7 @@ public class CommitMessageTemplateConfig implements PersistentStateComponent<Com
     }
 
     @Nullable
-    public static CommitMessageTemplateConfig getInstance(Project project) {
-        CommitMessageTemplateConfig sfec = ServiceManager.getService(project, CommitMessageTemplateConfig.class);
-        return sfec;
+    static CommitMessageTemplateConfig getInstance(Project project) {
+        return ServiceManager.getService(project, CommitMessageTemplateConfig.class);
     }
 }

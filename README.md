@@ -15,3 +15,6 @@ Open Settings > Tools > Commit Message Template and enter the desired template
 ### Use the template
 In the Commit Changes Dialog, click the commit message template button
 ![Screenshot](Commit.png)
+
+### Credits
+Inspired by and built upon the [what-the-commit plugin](https://github.com/darekkay/what-the-commit)
