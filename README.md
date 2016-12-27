@@ -8,7 +8,7 @@
 
  Or
 
- - Install directly from the IDE plugin manager (File > Settings > Plugins > Browser repositories > Commit Message Template)
+- Install directly from the IDE plugin manager (File > Settings > Plugins > Browser repositories > Commit Message Template)
 
 ## Usage
 
