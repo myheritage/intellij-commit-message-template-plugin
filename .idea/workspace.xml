@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="110aea92-0b57-4a5d-b815-5e6da466e500" name="Default" comment="Code refactoring, license and readme updates">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/enterTemplate.png" afterPath="$PROJECT_DIR$/src/commitmessagetemplate/enterTemplate.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="110aea92-0b57-4a5d-b815-5e6da466e500" name="Default" comment="Made sure thaqt the jar is updated with last version.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commit_template.jar" afterPath="$PROJECT_DIR$/commit_template.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="$PROJECT_DIR$/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateAction.java" afterPath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfig.java" afterPath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurable.java" afterPath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.form" afterPath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.java" afterPath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.java" />
     </list>
     <ignored path="commit_template.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,13 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="enterTemplate.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/enterTemplate.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="119">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -82,10 +67,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommitMessageTemplateConfigurableGUI.form" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommitMessageTemplateConfigurableGUI.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -153,14 +151,14 @@
         <option value="$PROJECT_DIR$/src/commitmessagetemplate/ui/SelectionPanel.java" />
         <option value="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.form" />
         <option value="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.java" />
         <option value="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfig.java" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateAction.java" />
         <option value="$PROJECT_DIR$/LICENSE.txt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurable.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -240,9 +238,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -331,6 +328,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -943,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,7 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,8 +999,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1022,15 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,12 +1083,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.form">
-      <provider selected="true" editor-type-id="ui-designer">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ui-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
       </provider>

@@ -5,7 +5,7 @@
     <vendor url="http://www.myheritage.com">MyHeritage</vendor>
 
     <description><![CDATA[
-    <p>111Adds a button to the commit dialog (right above the commit message field), that loads a commit message template.</p>
+    <p>Adds a button to the commit dialog (right above the commit message field), that loads a commit message template.</p>
     ]]></description>
 
     <change-notes><![CDATA[
