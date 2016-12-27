@@ -4,7 +4,11 @@
 - Tested on RubyMine, PHPStorm and IDEA community Edition
 
 ## Installation
-TBD
+- Download the [plugin](https://plugins.jetbrains.com/idea/plugin/9364-commit-message-template) and Install from the plugin manager in the IDE (File > Settings > Plugins > Install plugin from disk)
+
+ Or
+
+ - Install directly from the IDE plugin manager (File > Settings > Plugins > Browser repositories > Commit Message Template)
 
 ## Usage
 
