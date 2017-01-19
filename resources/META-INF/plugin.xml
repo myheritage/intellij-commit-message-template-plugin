@@ -1,7 +1,7 @@
 <idea-plugin version="1">
     <id>MHCommitMessageTemplate</id>
     <name>Commit Message Template</name>
-    <version>1</version>
+    <version>1.0.1</version>
     <vendor url="http://www.myheritage.com">MyHeritage</vendor>
 
     <description><![CDATA[
