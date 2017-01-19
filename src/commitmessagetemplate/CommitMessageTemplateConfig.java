@@ -5,8 +5,10 @@ import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.components.State;
 import com.intellij.openapi.components.Storage;
 import com.intellij.openapi.project.Project;
-import com.intellij.util.xmlb.XmlSerializerUtil;
+
 import org.jetbrains.annotations.Nullable;
+
+import commitmessagetemplate.CommitMessageTemplateConfig.CommitState;
 
 
 @State(
@@ -14,34 +16,35 @@ import org.jetbrains.annotations.Nullable;
         storages = {
                 @Storage("CommitMessageTemplateConfig.xml")}
 )
-public class CommitMessageTemplateConfig implements PersistentStateComponent<CommitMessageTemplateConfig> {
+public class CommitMessageTemplateConfig implements PersistentStateComponent<CommitState> {
 
-    private String commitMessage = "";
+    private CommitState cmState = new CommitState();
 
     String getCommitMessage() {
-        if (commitMessage == null) {
-            commitMessage = "";
-        }
-        return commitMessage;
+        return cmState.commitMessage;
     }
 
     void setCommitMessage(String commitMessage) {
-        this.commitMessage = commitMessage;
+        cmState.commitMessage = commitMessage;
     }
 
     @Nullable
     @Override
-    public CommitMessageTemplateConfig getState() {
-        return this;
+    public CommitState getState() {
+        return cmState;
     }
 
     @Override
-    public void loadState(CommitMessageTemplateConfig commitMessageTemplateConfig) {
-        XmlSerializerUtil.copyBean(commitMessageTemplateConfig, this);
+    public void loadState(CommitState state) {
+        cmState = state;
     }
 
     @Nullable
     static CommitMessageTemplateConfig getInstance(Project project) {
         return ServiceManager.getService(project, CommitMessageTemplateConfig.class);
+    }
+
+    public static class CommitState{
+        public String commitMessage = "";
     }
 }
