@@ -1,8 +1,13 @@
 package commitmessagetemplate;
 
+import com.intellij.openapi.fileChooser.FileChooserDescriptor;
+import com.intellij.openapi.fileChooser.FileChooserDescriptorFactory;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.ui.TextFieldWithBrowseButton;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * Created by matan.goren on 23-Sep-16.
@@ -10,12 +15,40 @@ import javax.swing.*;
 public class CommitMessageTemplateConfigurableGUI {
     private JPanel rootPanel;
     private JTextArea commitMessageTextBox;
+    private JRadioButton setTemplateRadioButton;
+    private JRadioButton loadTemplateFileRadioButton;
+    private TextFieldWithBrowseButton templateFilePath;
     private CommitMessageTemplateConfig config;
+    private FileChooserDescriptor descriptor = FileChooserDescriptorFactory.createSingleFileDescriptor("txt");
 
     void createUI(Project project) {
         config = CommitMessageTemplateConfig.getInstance(project);
+        templateFilePath.addBrowseFolderListener("Point to Commit Template File", "Choose .txt file", null,
+                descriptor);
+
+        setTemplateRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                commitMessageTextBox.setEnabled(true);
+                templateFilePath.setEnabled(false);
+            }
+        });
+
+        loadTemplateFileRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                templateFilePath.setEnabled(true);
+                commitMessageTextBox.setEnabled(false);
+            }
+        });
+
         if (config != null) {
-            commitMessageTextBox.setText(config.getCommitMessage());
+            commitMessageTextBox.setText(config.getManualTemplate());
+            setTemplateRadioButton.setSelected(config.getRadioStatus());
+            loadTemplateFileRadioButton.setSelected(!config.getRadioStatus());
+            templateFilePath.setText(config.getTemplateFilePath());
+            commitMessageTextBox.setEnabled(config.getRadioStatus());
+            templateFilePath.setEnabled(!config.getRadioStatus());
         }
     }
 
@@ -23,23 +56,25 @@ public class CommitMessageTemplateConfigurableGUI {
         return rootPanel;
     }
 
-//    public JTextArea getTemplateName() {
-//        return commitMessageTextBox;
-//    }
-
     boolean isModified() {
-        return !commitMessageTextBox.getText().equals(config.getCommitMessage());
+        return !commitMessageTextBox.getText().equals(config.getManualTemplate()) ||
+                !setTemplateRadioButton.isSelected() == config.getRadioStatus() ||
+                !templateFilePath.getText().equals(config.getTemplateFilePath());
     }
 
     void apply() {
         config.setCommitMessage(commitMessageTextBox.getText());
+        config.setRadioStatus(setTemplateRadioButton.isSelected());
+        config.setTemplateFilePath(templateFilePath.getText());
     }
 
     void reset() {
-        commitMessageTextBox.setText(config.getCommitMessage());
+        commitMessageTextBox.setText(config.getManualTemplate());
+        setTemplateRadioButton.setSelected(config.getRadioStatus());
+        loadTemplateFileRadioButton.setSelected(!config.getRadioStatus());
+        commitMessageTextBox.setEnabled(config.getRadioStatus());
+        templateFilePath.setEnabled(!config.getRadioStatus());
     }
-
-
 
 
 }

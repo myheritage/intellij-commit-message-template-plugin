@@ -13,7 +13,8 @@
 ## Usage
 
 ### Set a template
-Open Settings > Tools > Commit Message Template and enter the desired template
+Open Settings > Tools > Commit Message Template.
+Enter the desired template or set the path to a template file
 ![Screenshot](Settings.png)
 
 ### Use the template

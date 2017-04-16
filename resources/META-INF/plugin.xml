@@ -1,7 +1,7 @@
-<idea-plugin version="1">
+<idea-plugin>
     <id>MHCommitMessageTemplate</id>
     <name>Commit Message Template</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <vendor url="http://www.myheritage.com">MyHeritage</vendor>
 
     <description><![CDATA[
@@ -9,6 +9,14 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <p>1.0.2</p>
+    <ul>
+        <li>Added the ability to load template from file</li>
+    </ul>
+    <p>1.0.1</p>
+    <ul>
+        <li>fixed a bug that caused the template to be lost when a project is re-opened</li>
+    </ul>
     <p>1.0</p>
     <ul>
         <li>Initial release</li>
