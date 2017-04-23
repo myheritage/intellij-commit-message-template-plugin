@@ -14,7 +14,7 @@
 
 ### Set a template
 Open Settings > Tools > Commit Message Template.
-Enter the desired template or set the path to a template file
+Enter the desired template or set the path to a template file.
 If you set something in the comment characters, any line in the template file that starts with that character will be ignored when building the message
 ![Screenshot](Settings.png)
 
