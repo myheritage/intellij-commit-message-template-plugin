@@ -11,7 +11,7 @@
     <change-notes><![CDATA[
     <p>1.0.3</p>
     <ul>
-        <li>Added the ability to set commentChar when loading template from file. Any line that starts with the commentChar will be ignore when building the commit message</li>
+        <li>Added the ability to set commentChar when loading template from file.</li>
     </ul>
     <p>1.0.2</p>
     <ul>
