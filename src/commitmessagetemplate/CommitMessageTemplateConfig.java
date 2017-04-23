@@ -87,12 +87,16 @@ public class CommitMessageTemplateConfig implements PersistentStateComponent<Com
             int numberOfLines = readLines(configFilePath);
             int i;
             for (i = 0; i < numberOfLines; i++) {
-                if (sb.length() > 0) {
-                    sb.append("\n");
+                String line = textReader.readLine();
+                if (!line.startsWith("#")) {
+                    if (sb.length() > 0) {
+                        sb.append("\n");
+                    }
+                    sb.append(line);
+                    template = sb.toString();
                 }
-                sb.append(textReader.readLine());
-                template = sb.toString();
             }
+
             textReader.close();
         } catch (IOException e1) {
             template = "Couldn't open file";
