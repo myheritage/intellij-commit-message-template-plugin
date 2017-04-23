@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>MHCommitMessageTemplate</id>
     <name>Commit Message Template</name>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <vendor url="http://www.myheritage.com">MyHeritage</vendor>
 
     <description><![CDATA[
@@ -9,6 +9,10 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <p>1.0.3</p>
+    <ul>
+        <li>Added the ability to set commentChar when loading template from file. Any line that starts with the commentChar will be ignore when building the commit message</li>
+    </ul>
     <p>1.0.2</p>
     <ul>
         <li>Added the ability to load template from file</li>

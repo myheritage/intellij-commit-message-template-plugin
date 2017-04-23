@@ -44,6 +44,10 @@ public class CommitMessageTemplateConfig implements PersistentStateComponent<Com
         return cmState.radioState;
     }
 
+    String getCommentChar() {
+        return cmState.commentChar;
+    }
+
     void setCommitMessage(String commitMessage) {
         cmState.manualTemplate = commitMessage;
     }
@@ -54,6 +58,10 @@ public class CommitMessageTemplateConfig implements PersistentStateComponent<Com
 
     void setTemplateFilePath(String templateFilePath) {
         cmState.templateFilePath = templateFilePath;
+    }
+
+    void setCommentChar(String commentChar) {
+        cmState.commentChar = commentChar;
     }
 
     @Nullable
@@ -76,6 +84,7 @@ public class CommitMessageTemplateConfig implements PersistentStateComponent<Com
         public String manualTemplate = "";
         public boolean radioState = true;
         public String templateFilePath = "";
+        public String commentChar = "";
     }
 
     private String OpenFile(String configFilePath) {
@@ -88,7 +97,7 @@ public class CommitMessageTemplateConfig implements PersistentStateComponent<Com
             int i;
             for (i = 0; i < numberOfLines; i++) {
                 String line = textReader.readLine();
-                if (!line.startsWith("#")) {
+                if (!line.startsWith(getCommentChar()) || getCommentChar().equals("")) {
                     if (sb.length() > 0) {
                         sb.append("\n");
                     }

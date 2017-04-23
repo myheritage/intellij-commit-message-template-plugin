@@ -18,6 +18,8 @@ public class CommitMessageTemplateConfigurableGUI {
     private JRadioButton setTemplateRadioButton;
     private JRadioButton loadTemplateFileRadioButton;
     private TextFieldWithBrowseButton templateFilePath;
+    private JTextField commentChar;
+    private JLabel commentCharLabel;
     private CommitMessageTemplateConfig config;
     private FileChooserDescriptor descriptor = FileChooserDescriptorFactory.createSingleFileDescriptor("txt");
 
@@ -31,6 +33,7 @@ public class CommitMessageTemplateConfigurableGUI {
             public void actionPerformed(ActionEvent e) {
                 commitMessageTextBox.setEnabled(true);
                 templateFilePath.setEnabled(false);
+                commentChar.setEnabled(false);
             }
         });
 
@@ -38,6 +41,7 @@ public class CommitMessageTemplateConfigurableGUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 templateFilePath.setEnabled(true);
+                commentChar.setEnabled(true);
                 commitMessageTextBox.setEnabled(false);
             }
         });
@@ -49,6 +53,8 @@ public class CommitMessageTemplateConfigurableGUI {
             templateFilePath.setText(config.getTemplateFilePath());
             commitMessageTextBox.setEnabled(config.getRadioStatus());
             templateFilePath.setEnabled(!config.getRadioStatus());
+            commentChar.setEnabled(!config.getRadioStatus());
+            commentChar.setText(config.getCommentChar());
         }
     }
 
@@ -59,13 +65,15 @@ public class CommitMessageTemplateConfigurableGUI {
     boolean isModified() {
         return !commitMessageTextBox.getText().equals(config.getManualTemplate()) ||
                 !setTemplateRadioButton.isSelected() == config.getRadioStatus() ||
-                !templateFilePath.getText().equals(config.getTemplateFilePath());
+                !templateFilePath.getText().equals(config.getTemplateFilePath()) ||
+                !commentChar.getText().equals(config.getCommentChar());
     }
 
     void apply() {
         config.setCommitMessage(commitMessageTextBox.getText());
         config.setRadioStatus(setTemplateRadioButton.isSelected());
         config.setTemplateFilePath(templateFilePath.getText());
+        config.setCommentChar(commentChar.getText());
     }
 
     void reset() {
@@ -74,6 +82,8 @@ public class CommitMessageTemplateConfigurableGUI {
         loadTemplateFileRadioButton.setSelected(!config.getRadioStatus());
         commitMessageTextBox.setEnabled(config.getRadioStatus());
         templateFilePath.setEnabled(!config.getRadioStatus());
+        commentChar.setEnabled(!config.getRadioStatus());
+        commentChar.setText(config.getCommentChar());
     }
 
 
