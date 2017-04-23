@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="110aea92-0b57-4a5d-b815-5e6da466e500" name="Default" comment="Added the ability to load template from file.&#10;Built version 1.0.2">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commit_template.zip" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commit_template.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Settings.png" afterPath="$PROJECT_DIR$/Settings.png" />
+    <list default="true" id="110aea92-0b57-4a5d-b815-5e6da466e500" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commit_template.jar" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commit_template.zip" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changes.md" afterPath="$PROJECT_DIR$/changes.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfig.java" afterPath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.form" afterPath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.java" afterPath="$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.java" />
     </list>
     <ignored path="commit_template.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +28,7 @@
       <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="221">
               <caret line="13" column="82" lean-forward="false" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
               <folding />
             </state>
@@ -45,7 +38,7 @@
       <file leaf-file-name="CommitMessageTemplateConfigurableGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
+            <state relative-caret-position="595">
               <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -61,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changes.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="changes.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/changes.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -71,10 +64,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="kotlinc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/kotlinc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CommitMessageTemplateConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="544">
               <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -91,19 +94,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommitMessageTemplateConfigurable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
-              <folding>
-                <element signature="e#1361#1362#0" expanded="true" />
-                <element signature="e#1400#1401#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Settings.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Settings.png">
           <provider selected="true" editor-type-id="images">
@@ -114,7 +104,7 @@
       <file leaf-file-name="CommitMessageTemplateAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="867">
               <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="e#0#2856#0" expanded="true" />
@@ -127,54 +117,18 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-              <folding>
-                <marker date="1492978426921" expanded="true" signature="72183:72201" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72183:72214" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72183:72229" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72264:74546" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72277:74531" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72331:72633" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72350:72618" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72413:72598" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72453:72564" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72474:72542" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72683:73017" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72702:73002" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72797:72982" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72837:72948" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="72858:72926" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73068:73417" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73087:73402" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73197:73382" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73237:73348" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73258:73326" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73460:73817" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73479:73802" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73597:73782" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73637:73748" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73658:73726" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73868:74193" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73887:74178" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="73973:74158" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="74013:74124" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="74034:74102" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="74245:74517" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="74264:74502" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="74297:74482" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="74337:74448" ph="..." />
-                <marker date="1492978426921" expanded="true" signature="74358:74426" ph="..." />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="104">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -278,9 +232,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,28 +244,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="intellij-commit-message-template-plugin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intellij-commit-message-template-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intellij-commit-message-template-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commitmessagetemplate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CommitMessageTemplateConfigurableGUI" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -367,10 +298,11 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.CommitMessageTemplateConfigurable" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32528734" />
@@ -726,7 +658,42 @@
       <option name="project" value="LOCAL" />
       <updated>1492970994247</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added the ability to set commentChar when loading template from file.&#10;Built version 1.0.3">
+      <created>1492978539137</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1492978539137</updated>
+    </task>
+    <task id="LOCAL-00009" summary="README updates">
+      <created>1492979123000</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1492979123000</updated>
+    </task>
+    <task id="LOCAL-00010" summary="README updates">
+      <created>1492979158934</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1492979158934</updated>
+    </task>
+    <task id="LOCAL-00011" summary="README updates">
+      <created>1492979189167</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1492979189167</updated>
+    </task>
+    <task id="LOCAL-00012" summary="README updates">
+      <created>1492979383600</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1492979383600</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -743,7 +710,6 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -755,7 +721,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3245083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33509833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -766,6 +732,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.015384615" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -808,7 +775,9 @@
     <MESSAGE value="Added changes.md, built version 1.0.1" />
     <MESSAGE value="Added the ability to load template from file.&#10;Built version 1.0.2" />
     <MESSAGE value="When loading commit.template file skip lines that start with &quot;#&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="When loading commit.template file skip lines that start with &quot;#&quot;." />
+    <MESSAGE value="Added the ability to set commentChar when loading template from file.&#10;Built version 1.0.3" />
+    <MESSAGE value="README updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="README updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,14 +852,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1121,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13345">
           <caret line="892" column="16" lean-forward="false" selection-start-line="892" selection-start-column="16" selection-end-line="892" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1136,16 +1096,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
-          <folding>
-            <element signature="e#1361#1362#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
+        <state relative-caret-position="867">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="e#0#2856#0" expanded="true" />
@@ -1156,7 +1112,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="544">
           <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1173,18 +1129,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commitmessagetemplate/CommitMessageTemplateConfigurableGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
+        <state relative-caret-position="595">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1194,51 +1150,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <marker date="1492978426921" expanded="true" signature="72183:72201" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72183:72214" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72183:72229" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72264:74546" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72277:74531" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72331:72633" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72350:72618" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72413:72598" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72453:72564" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72474:72542" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72683:73017" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72702:73002" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72797:72982" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72837:72948" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="72858:72926" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73068:73417" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73087:73402" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73197:73382" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73237:73348" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73258:73326" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73460:73817" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73479:73802" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73597:73782" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73637:73748" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73658:73726" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73868:74193" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73887:74178" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="73973:74158" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="74013:74124" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="74034:74102" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="74245:74517" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="74264:74502" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="74297:74482" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="74337:74448" ph="..." />
-            <marker date="1492978426921" expanded="true" signature="74358:74426" ph="..." />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="221">
           <caret line="13" column="82" lean-forward="false" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
           <folding />
         </state>
@@ -1249,18 +1169,26 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/changes.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/kotlinc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
