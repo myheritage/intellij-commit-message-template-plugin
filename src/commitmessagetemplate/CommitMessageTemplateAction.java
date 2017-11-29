@@ -28,6 +28,7 @@ import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.project.DumbAware;
+import com.intellij.openapi.vcs.CheckinProjectPanel;
 import com.intellij.openapi.vcs.CommitMessageI;
 import com.intellij.openapi.vcs.VcsDataKeys;
 import com.intellij.openapi.vcs.ui.Refreshable;
@@ -39,7 +40,7 @@ import org.jetbrains.annotations.Nullable;
 public class CommitMessageTemplateAction extends AnAction implements DumbAware {
 
     public void actionPerformed(AnActionEvent e) {
-        final CommitMessageI checkinPanel = getCheckinPanel(e);
+        final CheckinProjectPanel checkinPanel = getCheckinPanel(e);
         if (checkinPanel == null) {
             return;
         }
@@ -50,25 +51,30 @@ public class CommitMessageTemplateAction extends AnAction implements DumbAware {
         if (config != null) {
             String commitMessage = config.getCommitMessage();
             if (!commitMessage.isEmpty()) {
-                checkinPanel.setCommitMessage(commitMessage);
+                if (config.getAppendMode()) {
+                    checkinPanel.setCommitMessage(checkinPanel.getCommitMessage() + " " + commitMessage);
+                } else {
+                    checkinPanel.setCommitMessage(commitMessage);
+                }
             }
         }
     }
 
 
     @Nullable
-    private static CommitMessageI getCheckinPanel(@Nullable AnActionEvent e) {
+    private static CheckinProjectPanel getCheckinPanel(@Nullable AnActionEvent e) {
         if (e == null) {
             return null;
         }
         Refreshable data = Refreshable.PANEL_KEY.getData(e.getDataContext());
-        if (data instanceof CommitMessageI) {
-            return (CommitMessageI) data;
+        if (data instanceof CheckinProjectPanel) {
+            return (CheckinProjectPanel) data;
         }
-        CommitMessageI commitMessageI = VcsDataKeys.COMMIT_MESSAGE_CONTROL.getData(e.getDataContext());
-        if (commitMessageI != null) {
-            return commitMessageI;
-        }
+        // Unsure what to do with this. Can't get the current commitMessage from a commitMessageI.
+//        CommitMessageI commitMessageI = VcsDataKeys.COMMIT_MESSAGE_CONTROL.getData(e.getDataContext());
+//        if (commitMessageI != null) {
+//            return commitMessageI;
+//        }
         return null;
     }
 }
