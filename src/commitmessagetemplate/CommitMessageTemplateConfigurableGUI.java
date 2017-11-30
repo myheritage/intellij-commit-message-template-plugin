@@ -20,6 +20,7 @@ public class CommitMessageTemplateConfigurableGUI {
     private TextFieldWithBrowseButton templateFilePath;
     private JTextField commentChar;
     private JLabel commentCharLabel;
+    private JCheckBox append;
     private CommitMessageTemplateConfig config;
     private FileChooserDescriptor descriptor = FileChooserDescriptorFactory.createSingleFileDescriptor("txt");
 
@@ -55,6 +56,7 @@ public class CommitMessageTemplateConfigurableGUI {
             templateFilePath.setEnabled(!config.getRadioStatus());
             commentChar.setEnabled(!config.getRadioStatus());
             commentChar.setText(config.getCommentChar());
+            append.setSelected(config.getAppendMode());
         }
     }
 
@@ -66,7 +68,8 @@ public class CommitMessageTemplateConfigurableGUI {
         return !commitMessageTextBox.getText().equals(config.getManualTemplate()) ||
                 !setTemplateRadioButton.isSelected() == config.getRadioStatus() ||
                 !templateFilePath.getText().equals(config.getTemplateFilePath()) ||
-                !commentChar.getText().equals(config.getCommentChar());
+                !commentChar.getText().equals(config.getCommentChar()) ||
+                !append.isSelected() == config.getAppendMode();
     }
 
     void apply() {
@@ -74,6 +77,7 @@ public class CommitMessageTemplateConfigurableGUI {
         config.setRadioStatus(setTemplateRadioButton.isSelected());
         config.setTemplateFilePath(templateFilePath.getText());
         config.setCommentChar(commentChar.getText());
+        config.setAppend(append.isSelected());
     }
 
     void reset() {
@@ -84,6 +88,7 @@ public class CommitMessageTemplateConfigurableGUI {
         templateFilePath.setEnabled(!config.getRadioStatus());
         commentChar.setEnabled(!config.getRadioStatus());
         commentChar.setText(config.getCommentChar());
+        append.setSelected(config.getAppendMode());
     }
 
 

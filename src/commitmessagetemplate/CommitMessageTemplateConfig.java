@@ -48,6 +48,9 @@ public class CommitMessageTemplateConfig implements PersistentStateComponent<Com
         return cmState.commentChar;
     }
 
+    boolean getAppendMode() {
+        return cmState.append;
+    }
     void setCommitMessage(String commitMessage) {
         cmState.manualTemplate = commitMessage;
     }
@@ -62,6 +65,10 @@ public class CommitMessageTemplateConfig implements PersistentStateComponent<Com
 
     void setCommentChar(String commentChar) {
         cmState.commentChar = commentChar;
+    }
+
+    void setAppend(boolean append) {
+        cmState.append = append;
     }
 
     @Nullable
@@ -85,6 +92,7 @@ public class CommitMessageTemplateConfig implements PersistentStateComponent<Com
         public boolean radioState = true;
         public String templateFilePath = "";
         public String commentChar = "";
+        public boolean append = false;
     }
 
     private String OpenFile(String configFilePath) {

@@ -9,6 +9,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <p>1.0.3-mkempster-20171129</p>
+    <ul>
+        <li>Option to append template text to an existing commit message instead of completely overwriting.</li>
+        <li>Use case: Add crucible smart-commit macros to the default message.</li>
+    </ul>
     <p>1.0.3</p>
     <ul>
         <li>Added the ability to set commentChar when loading template from file.</li>
